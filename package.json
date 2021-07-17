@@ -1,0 +1,19 @@
+{
+  "name": "todoappreactiveangular",
+  "version": "1.0.0",
+  "description": "Create custom to-do lists with reactive Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahar-Goldman/TodoAppReactiveAngular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sahar-Goldman/TodoAppReactiveAngular/issues"
+  },
+  "homepage": "https://github.com/Sahar-Goldman/TodoAppReactiveAngular#readme"
+}

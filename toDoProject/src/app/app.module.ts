@@ -10,6 +10,7 @@ import { NotFoundComponent } from './Component/not-found/not-found.component';
 import { ListEditorComponent } from './Component/list-editor/list-editor.component';
 import { ListViewerComponent } from './Component/list-viewer/list-viewer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ItemViewerComponent } from './Component/item-viewer/item-viewer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ListsComponent,
     NotFoundComponent,
     ListEditorComponent,
-    ListViewerComponent
+    ListViewerComponent,
+    ItemViewerComponent
   ],
   imports: [
     BrowserModule,

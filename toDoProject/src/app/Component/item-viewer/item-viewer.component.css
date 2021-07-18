@@ -1,0 +1,27 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.root.active {
+    cursor: pointer;
+}
+.root.active:hover {
+    background: var(--p50);
+}
+
+.material-icons {
+    color: var(--p300);
+    margin: 4px;
+    font-size: 36px;
+}
+
+.caption {
+    font-size: 24px;
+}
+
+.caption.completed {
+    opacity: 0.6;
+    text-decoration: line-through var(--a700);
+}

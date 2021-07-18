@@ -1,0 +1,9 @@
+.material-icons{
+    color: var(--a100);
+
+}
+
+.negative-button:disabled, positive-button:disabled{
+    cursor: unset;
+    opacity: 0.3;
+}

@@ -1,0 +1,15 @@
+.negative-button {
+    border-radius: 4px;
+    background-color: var(--a000);
+    color: var(--b200);
+    border: 2px solid var(--a200);
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 var(--c100), 0 17px 50px 0 var(--c200);
+}
+
+.negative-button:enabled:hover {
+    background-color: var(--a400); 
+    color: var(--b100);
+    border: 2px solid var(--a400);
+    cursor: pointer;
+  }

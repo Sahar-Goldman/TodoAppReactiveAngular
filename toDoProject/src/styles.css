@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/custom-styles/custom-card.css";
+@import "./app/custom-styles/custom-positive-button.css";
+@import "./app/custom-styles/custom-negative-button.css";
+
+:root{
+    --b100 : white;
+    --b200 : black;
+    --c100 : rgba(0,0,0,0.24);
+    --c200 : rgba(0,0,0,0.19);
+    --p100 : #b3e5fc;
+    --p200 : #81d4fa;
+    --p300 : #4fc3f7;
+    --p400 : #29b6f6;
+    --p500 : #03a9f4;
+    --p600 : #03a2f3;
+    --p700 : #0298f1;
+    --p800 : #028fef;
+    --p900 : #017eec;
+    --a000 : #FF8A80;
+    --a100 : #F44336;
+    --a200 : #FF5252;
+    --a400 : #FF1744;
+    --a700 : #D50000;
+}

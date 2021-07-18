@@ -1,1 +1,41 @@
-<p>list-editor works!</p>
+<header>Edit List Details</header>
+<form [formGroup]="form" class="fancy-shadow">
+    <div class="form-field">
+        <label>Caption:</label>
+        <input type="text" formControlName="caption">
+        <div class="errors" *ngIf="form.get('caption')?.errors as errs">
+            <div *ngIf="errs['required'] as err">required</div>
+        </div>
+    </div>    
+    <div class="form-field">
+        <label>Description:</label>
+        <textarea formControlName="description"></textarea>
+        <div class="errors" *ngIf="form.get('description')?.errors as errs">
+            <div *ngIf="errs['required'] as err">required</div>
+            <div *ngIf="errs['counters'] as err">
+                Letters: {{err.chars}}/{{err.requiredChars}}, 
+                Words: {{err.words}}/{{err.requiredWords}}
+            </div>
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Icon:</label>
+        <select formControlName="icon" class="material-icons">
+            <option value=""></option>
+            <option *ngFor="let ic of icons" [value]="ic" class="material-icons">{{ic}}</option>
+        </select>
+        <div class="errors" *ngIf="form.get('icon')?.errors as errs">
+            <div *ngIf="errs['required'] as err">required</div>
+        </div>
+    </div>
+    <div class="form-field">
+        <label>Color:</label>
+        <select formControlName="color" [style.color]="form.get('color')?.value">
+            <option *ngFor="let col of colors" [value]="col" [style.color]="col">{{col}}</option>
+        </select>
+        <div class="errors" *ngIf="form.get('color')?.errors as errs">
+            <div *ngIf="errs['required'] as err">required</div>
+        </div>
+    </div>
+    <button class="positive-button" (click)="save()" [disabled]="form.invalid || form.pristine" >Save</button>
+</form>

@@ -9,6 +9,7 @@ import { ListsComponent } from './Component/lists/lists.component';
 import { NotFoundComponent } from './Component/not-found/not-found.component';
 import { ListEditorComponent } from './Component/list-editor/list-editor.component';
 import { ListViewerComponent } from './Component/list-viewer/list-viewer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ListViewerComponent } from './Component/list-viewer/list-viewer.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

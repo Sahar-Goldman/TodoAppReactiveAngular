@@ -7,6 +7,8 @@ import { HomeComponent } from './Component/home/home.component';
 import { ItemsComponent } from './Component/items/items.component';
 import { ListsComponent } from './Component/lists/lists.component';
 import { NotFoundComponent } from './Component/not-found/not-found.component';
+import { ListEditorComponent } from './Component/list-editor/list-editor.component';
+import { ListViewerComponent } from './Component/list-viewer/list-viewer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NotFoundComponent } from './Component/not-found/not-found.component';
     HomeComponent,
     ItemsComponent,
     ListsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ListEditorComponent,
+    ListViewerComponent
   ],
   imports: [
     BrowserModule,

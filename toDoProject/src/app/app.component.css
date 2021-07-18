@@ -1,9 +1,45 @@
-.material-icons{
-    color: var(--a100);
 
+:host {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
 }
 
-.negative-button:disabled, positive-button:disabled{
-    cursor: unset;
-    opacity: 0.3;
+.title-area {
+    background-color: var(--p500);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.main-area {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.navbar-area {
+    background-color: var(--p100);
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-area a {
+    color: var(--p900);
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-area a:hover {
+    background-color: var(--p300);
+}
+
+.navbar-area a.current {
+    background-color: var(--p900);
+    color: var(--p100);
 }

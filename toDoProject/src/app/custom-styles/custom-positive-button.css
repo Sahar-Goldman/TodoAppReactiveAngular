@@ -13,3 +13,8 @@
     border: 2px solid var(--p500);
     cursor: pointer;
   }
+
+  .positive-button:disabled{
+    cursor: unset;
+    opacity: 0.3;
+}

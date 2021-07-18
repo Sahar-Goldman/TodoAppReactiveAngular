@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Sahar-Goldman/TodoAppReactiveAngular/issues"
   },
-  "homepage": "https://github.com/Sahar-Goldman/TodoAppReactiveAngular#readme"
+  "homepage": "https://github.com/Sahar-Goldman/TodoAppReactiveAngular#readme",
+  "dependencies": {
+    "material-icons": "^0.7.6"
+  }
 }
